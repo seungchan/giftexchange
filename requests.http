@@ -1,0 +1,32 @@
+### Post a member"
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+  "fullname": "John Adams"
+}
+
+### Post another member"
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+  "fullname": "Jamie Adams"
+}
+
+
+### Get all the members
+GET http://localhost:8080/members
+
+### Do a gift shuffle"
+POST http://localhost:8080/gift_exchange/shuffle
+Content-Type: application/json
+
+{
+  "giverid": "a30c3e70-f125-4e1f-9ba4-ddba70b999da",
+  "receiverid": "2cbda7e8-3658-4077-9de8-6d56fa909c51",
+  "time": "2022-04-08T03:15:21.721704Z"
+}
+
+### Get all exchange
+GET http://localhost:8080/gift_exchange
