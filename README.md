@@ -1,4 +1,13 @@
 # Secret Gift Exchange
+## REST endpoints:
+### GET /gift_exchange
+     Show the most recent gift exchange
+### POST /gift_exchange/shuffle
+     Shuffle the gift exchange and return the results of the shuffle
+### GET /members
+     List the family members
+### POST /members
+     Add a new family members
 
 ## To run
 ```gradle bootRun```
